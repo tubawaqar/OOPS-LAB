@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class Employee{
+    private  int employeeld;
+ private String employeename;
+public void setemployeeld(int employeeld){
+    this.employeeld=employeeld;
+}
+public  void setemployeename(String employeename){
+  this.employeename=employeename;
+}
+public void getemployeeld(){
+    System.out.println(this.employeeld);}
+public void getemployeename(){
+        System.out.println(this.employeename);
+}
+public void displayDesignation(){
+    System.out.println("designation;Employee");
+ }}
+public class runner{
+    public static void main(String[]args){
+        Scanner input=new Scanner(System.in);
+        Employee emp=new Employee();
+        System.out.println("enter employee id");
+        int id=input.nextInt();
+        input.nextLine();
+        System.out.println("enter employee name");
+        String name=input.nextLine();
+        emp.setemployeeld(id);
+        emp.setemployeename(name);
+        emp.getemployeeld();
+        emp.getemployeename();
+        emp.displayDesignation();
+
+
+    }
+}
